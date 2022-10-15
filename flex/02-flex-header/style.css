@@ -1,6 +1,61 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 48px;
+  font-weight: 900;
+  color: tomato;
+  background: white;
+  padding: 4px 32px;
+  margin: 10px 0px;
+  flex: 0 0 0;
+}
+
+.left-links {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.right-links {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+ul {
+  padding: 0px 20px;
+  margin: 0px;
+  display: flex;
+  gap: 30px;
+  /* this removes the dots on the list items */
+  list-style-type: none;
+}
+
+a {
+  font-size: 22px;
+  background: white;
+  padding: 8px;
+  /* this removes the line under the links */
+  text-decoration: none;
+}
+
+/*trying out the solution because I did something else*/
+
+/* .header  {
+  font-family: monospace;
+  background: papayawhip;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -12,14 +67,18 @@
 }
 
 ul {
-  /* this removes the dots on the list items*/
+  /* this removes the dots on the list items
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
-  /* this removes the line under the links */
+  /* this removes the line under the links 
   text-decoration: none;
-}
+} */
