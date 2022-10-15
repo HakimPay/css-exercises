@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+  display: flex;
+  align-items: center; /*useless*/
+  justify-content: space-between;
 }
 
 .profile-image {
@@ -29,6 +33,19 @@ body {
   font-style: italic;
 }
 
+.left-items {
+  display: flex;
+  /*because I forgot to remove padding and margin on ul*/
+  align-items: center;
+  gap: 16px;
+}
+
+.right-items {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 button {
   border: none;
   border-radius: 8px;
@@ -44,5 +61,10 @@ a {
 }
 
 ul {
+  display: flex;
+  /*correction*/
+  margin: 0px;
+  padding: 0px;
+  gap: 16px;
   list-style-type: none;
 }
