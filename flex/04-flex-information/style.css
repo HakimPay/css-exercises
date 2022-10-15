@@ -12,6 +12,26 @@ img {
   font-weight: 900;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.fruits {
+  display: flex;
+  gap: 52px;
+}
+
+.fruit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px; /*I initially put flex: 200px; which is wrong but gives an ok result*/
+  text-align: center;
+}
+
 /* do not edit this footer */
 .footer {
   position: fixed;
